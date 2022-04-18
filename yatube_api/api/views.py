@@ -4,7 +4,7 @@ from rest_framework import viewsets, permissions
 from api.permission import IsAuthorOrReadOnly
 from api.serializers import PostSerializer, CommentSerializer, GroupSerializer
 
-from posts.models import Post, Comment, Group
+from posts.models import Post, Group
 
 
 class PostViewSet(viewsets.ModelViewSet):
